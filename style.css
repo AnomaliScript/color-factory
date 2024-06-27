@@ -2,6 +2,17 @@
     font-family: helvetica;
 }
 
+@keyframes animation1 {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(1.2) rotate(360deg);
+        background-color: aqua;
+        color: white;
+    }
+}
+
 body {
     margin: 0px;
 }
@@ -17,4 +28,15 @@ body {
     top: 0;
     margin: 0px;
     padding: 5px;
+}
+
+#aboutMe {
+    box-sizing: border-box;
+    padding: 7px;
+    border-radius: 2px;
+    background-color: inherit;
+    font-family: inherit;
+}
+#aboutMe:hover {
+    animation: animation1 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
