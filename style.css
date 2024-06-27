@@ -7,7 +7,7 @@
         transform: scale(1) rotate(0deg);
     }
     to {
-        transform: scale(1.2) rotate(360deg);
+        transform: scale(1.2) rotate(15deg);
         background-color: aqua;
         color: white;
     }
@@ -24,7 +24,7 @@ body {
     box-sizing: border-box;
     position: sticky;
     background-color: black;
-    height: 50px;
+    height: 60px;
     width: 100%;
     padding: 5px;
 }
@@ -32,12 +32,14 @@ body {
 #aboutMe {
     box-sizing: border-box;
     padding: 7px;
-    border-radius: 2px;
+    border-radius: 5px;
     text-decoration: none;
+    background-color: white;
     color: aqua;
-    background-color: inherit;
-    font-family: inherit;
 }
 #aboutMe:hover {
-    animation: animation1 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    animation: animation1 0.4s forwards cubic-bezier(0.19, 1, 0.22, 1);
+}
+#aboutMe:not(:hover) {
+    animation: animation1 0.4s reverse forwards cubic-bezier(0.19, 1, 0.22, 1);
 }
