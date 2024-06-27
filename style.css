@@ -18,15 +18,14 @@ body {
 }
 
 .header {
-    display: flex; /* The king */
+    display: flex; /* W moment */
     justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
     position: sticky;
+    background-color: black;
     height: 50px;
     width: 100%;
-    top: 0;
-    margin: 0px;
     padding: 5px;
 }
 
@@ -34,6 +33,8 @@ body {
     box-sizing: border-box;
     padding: 7px;
     border-radius: 2px;
+    text-decoration: none;
+    color: aqua;
     background-color: inherit;
     font-family: inherit;
 }
