@@ -2,13 +2,19 @@
     font-family: helvetica;
 }
 
+body {
+    margin: 0px;
+}
+
 .header {
     display: flex; /* The king */
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    position: sticky;
     height: 50px;
     width: 100%;
     top: 0;
-    position: sticky;
+    margin: 0px;
     padding: 5px;
-    justify-content: space-around;
-    align-items: center;
 }
