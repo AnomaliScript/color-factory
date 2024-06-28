@@ -58,13 +58,18 @@ body {
 }
 
 .interactivePart {
-    position: relative;
+    position: flex;
     height: 200px;
     width: 100px;
 }
 
+.interactivePart p {
+    position: relative;
+}
+
 /* Red */
 p#red {
+    position: absolute;
     color: red;
 }
 
@@ -89,6 +94,7 @@ input#slider1[value="0"] ~ p#red {
 
 /* Green */
 p#green {
+    position: absolute;
     color: lime;
 }
   input#slider2[value="0"] ~ p#green {
@@ -112,6 +118,7 @@ p#green {
 
 /* Blue */
 p#blue {
+    position: absolute;
     color: cyan;
 }
   input#slider3[value="0"] ~ p#blue {
