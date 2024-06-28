@@ -58,13 +58,17 @@ body {
 }
 
 .interactivePart {
-    position: flex;
     height: 200px;
-    width: 100px;
 }
 
-.interactivePart p {
-    position: relative;
+.mixing {
+    display: inline;
+    width: 50%;
+}
+
+.sliders {
+    display: inline;
+    width: 50%;
 }
 
 /* Red */
