@@ -5,12 +5,27 @@
 @keyframes animation1 {
     from {
         transform: scale(1) rotate(0deg);
+        background-color: white;
+        color: aqua;
     }
     to {
         transform: scale(1.2) rotate(15deg);
         background-color: aqua;
         color: white;
     }
+}
+
+@keyframes reverseAnimation1 {
+    from {
+        transform: scale(1.2) rotate(15deg);
+        background-color: aqua;
+        color: white;
+      }
+      to {
+        transform: scale(1) rotate(0deg);
+        background-color: white;
+        color: aqua;
+      }
 }
 
 body {
@@ -24,6 +39,7 @@ body {
     box-sizing: border-box;
     position: sticky;
     background-color: black;
+    color: white;
     height: 60px;
     width: 100%;
     padding: 5px;
@@ -38,8 +54,8 @@ body {
     color: aqua;
 }
 #aboutMe:hover {
-    animation: animation1 0.4s forwards cubic-bezier(0.19, 1, 0.22, 1);
+    animation: animation1 1s forwards cubic-bezier(0.19, 1, 0.22, 1);
 }
 #aboutMe:not(:hover) {
-    animation: animation1 0.4s reverse forwards cubic-bezier(0.19, 1, 0.22, 1);
+    animation: animation1 1s reverse forwards cubic-bezier(0.19, 1, 0.22, 1);
 }
