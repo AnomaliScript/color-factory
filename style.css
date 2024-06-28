@@ -54,10 +54,7 @@ body {
     color: aqua;
 }
 #aboutMe:hover {
-    animation: animation1 1s forwards cubic-bezier(0.19, 1, 0.22, 1);
-}
-#aboutMe:not(:hover) {
-    animation: animation1 1s reverse forwards cubic-bezier(0.19, 1, 0.22, 1);
+    animation: animation1 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .interactivePart {
