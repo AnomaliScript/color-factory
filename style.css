@@ -15,19 +15,6 @@
     }
 }
 
-@keyframes reverseAnimation1 {
-    from {
-        transform: scale(1.2) rotate(15deg);
-        background-color: aqua;
-        color: white;
-      }
-      to {
-        transform: scale(1) rotate(0deg);
-        background-color: white;
-        color: aqua;
-      }
-}
-
 body {
     margin: 0px;
 }
@@ -52,29 +39,50 @@ body {
     text-decoration: none;
     background-color: white;
     color: aqua;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 #aboutMe:hover {
-    animation: animation1 1s cubic-bezier(0.19, 1, 0.22, 1);
+    animation: animation1 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#aboutMe:not(:hover) {
+  transform: scale(1) rotate(0deg);
+  background-color: white;
+  color: aqua;;
 }
 
 .interactivePart {
-    height: 200px;
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+
+.mixing, .sliders {
+  width: 50%;
+  box-sizing: border-box;
 }
 
 .mixing {
-    display: inline;
-    width: 50%;
+  padding: 10px;
 }
 
 .sliders {
-    display: inline;
-    width: 50%;
+  display: flex;
+  padding: 10px;
+  background-color: lightgreen;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
 }
 
 /* Red */
 p#red {
     position: absolute;
+    left: 30%;
+    top: 150px;
     color: red;
+    padding: 100px;
+    margin: 0px;
 }
 
 input#slider1[value="0"] ~ p#red {
@@ -99,7 +107,11 @@ input#slider1[value="0"] ~ p#red {
 /* Green */
 p#green {
     position: absolute;
+    left: 30%;
+    top: 150px;
     color: lime;
+    padding: 100px;
+    margin: 0px;
 }
   input#slider2[value="0"] ~ p#green {
     opacity: 0.1;
@@ -123,7 +135,11 @@ p#green {
 /* Blue */
 p#blue {
     position: absolute;
+    left: 30%;
+    top: 150px;
     color: cyan;
+    padding: 100px;
+    margin: 0px;
 }
   input#slider3[value="0"] ~ p#blue {
     opacity: 0.1;
