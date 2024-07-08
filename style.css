@@ -39,10 +39,11 @@ body {
     text-decoration: none;
     background-color: white;
     color: aqua;
-    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: pointer;
+    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
 }
 #aboutMe:hover {
-    animation: buttonAnimation 0.7s forwards;
+  animation: buttonAnimation 0.7s forwards;
 }
 #aboutMe:not(:hover) {
   transform: scale(1) rotate(0deg);
