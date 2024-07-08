@@ -2,19 +2,6 @@
     font-family: helvetica;
 }
 
-@keyframes buttonAnimation {
-    from {
-        transform: scale(1) rotate(0deg);
-        background-color: white;
-        color: aqua;
-    }
-    to {
-        transform: scale(1.2) rotate(15deg);
-        background-color: aqua;
-        color: white;
-    }
-}
-
 body {
     margin: 0px;
 }
@@ -46,11 +33,6 @@ body {
   transform: scale(1.2) rotate(15deg);
   background-color: aqua;
   color: white;
-}
-#aboutMe:not(:hover) {
-  transform: scale(1) rotate(0deg);
-  background-color: white;
-  color: aqua;
 }
 
 .interactivePart {
