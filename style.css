@@ -43,9 +43,9 @@ body {
     transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
 }
 #aboutMe:hover {
-  transform: scale(1) rotate(0deg);
-  background-color: white;
-  color: aqua;
+  transform: scale(1.2) rotate(15deg);
+  background-color: aqua;
+  color: white;
 }
 #aboutMe:not(:hover) {
   transform: scale(1) rotate(0deg);
