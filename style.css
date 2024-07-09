@@ -30,7 +30,7 @@ body {
     transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
 }
 #aboutMe:hover {
-  transform: scale(1.2) rotate(15deg);
+  transform: scale(1.2) rotate(7deg);
   background-color: aqua;
   color: white;
 }
@@ -50,6 +50,85 @@ body {
   padding: 10px;
 }
 
+/* mixing */
+
+.mixing p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 100px;
+  margin: 0px;
+}
+
+/* Red */
+p#red {
+  color: red;
+}
+input#redIntensity[value="0"] ~ p#red {
+  opacity: 0.1;
+}
+input#redIntensity[value="20"] ~ p#red {
+  opacity: 0.3;
+}
+input#redIntensity[value="40"] ~ p#red {
+  opacity: 0.5;
+}
+input#redIntensity[value="60"] ~ p#red {
+  opacity: 0.7;
+}
+input#redIntensity[value="80"] ~ p#red {
+  opacity: 0.9;
+}
+input#redIntensity[value="100"] ~ p#red {
+  opacity: 1;
+}
+
+/* Green */
+p#green {
+  color: lime;
+}
+input#greenIntensity[value="0"] ~ p#green {
+  opacity: 0.1;
+}
+input#greenIntensity[value="20"] ~ p#green {
+  opacity: 0.3;
+}
+input#greenIntensity[value="40"] ~ p#green {
+  opacity: 0.5;
+}
+input#greenIntensity[value="60"] ~ p#green {
+  opacity: 0.7;
+}
+input#greenIntensity[value="80"] ~ p#green {
+  opacity: 0.9;
+}
+input#greenIntensity[value="100"] ~ p#green {
+  opacity: 1;
+}
+
+/* Blue */
+p#blue {
+  color: blue;
+}
+input#blueIntensity[value="0"] ~ p#blue {
+  opacity: 0.1;
+}
+input#blueIntensity[value="20"] ~ p#blue {
+  opacity: 0.3;
+}
+input#blueIntensity[value="40"] ~ p#blue {
+  opacity: 0.5;
+}
+input#blueIntensity[value="60"] ~ p#blue {
+  opacity: 0.7;
+}
+input#blueIntensity[value="80"] ~ p#blue {
+  opacity: 0.9;
+}
+input#blueIntensity[value="100"] ~ p#blue {
+  opacity: 1;
+}
+
 .sliders {
   display: flex;
   padding: 10px;
@@ -59,88 +138,3 @@ body {
   justify-content: space-evenly;
   align-content: center;
 }
-
-/* Red */
-p#red {
-    position: absolute;
-    left: 30%;
-    top: 150px;
-    color: red;
-    padding: 100px;
-    margin: 0px;
-}
-
-input#slider1[value="0"] ~ p#red {
-    opacity: 0.1;
-  }
-  input#slider1[value="20"] ~ p#red {
-    opacity: 0.3;
-  }
-  input#slider1[value="40"] ~ p#red {
-    opacity: 0.5;
-  }
-  input#slider1[value="60"] ~ p#red {
-    opacity: 0.7;
-  }
-  input#slider1[value="80"] ~ p#red {
-    opacity: 0.9;
-  }
-  input#slider1[value="100"] ~ p#red {
-    opacity: 1;
-  }
-
-/* Green */
-p#green {
-    position: absolute;
-    left: 30%;
-    top: 150px;
-    color: lime;
-    padding: 100px;
-    margin: 0px;
-}
-  input#slider2[value="0"] ~ p#green {
-    opacity: 0.1;
-  }
-  input#slider2[value="20"] ~ p#green {
-    opacity: 0.3;
-  }
-  input#slider2[value="40"] ~ p#green {
-    opacity: 0.5;
-  }
-  input#slider2[value="60"] ~ p#green {
-    opacity: 0.7;
-  }
-  input#slider2[value="80"] ~ p#green {
-    opacity: 0.9;
-  }
-  input#slider2[value="100"] ~ p#green {
-    opacity: 1;
-  }
-
-/* Blue */
-p#blue {
-    position: absolute;
-    left: 30%;
-    top: 150px;
-    color: cyan;
-    padding: 100px;
-    margin: 0px;
-}
-  input#slider3[value="0"] ~ p#blue {
-    opacity: 0.1;
-  }
-  input#slider3[value="20"] ~ p#blue {
-    opacity: 0.3;
-  }
-  input#slider3[value="40"] ~ p#blue {
-    opacity: 0.5;
-  }
-  input#slider3[value="60"] ~ p#blue {
-    opacity: 0.7;
-  }
-  input#slider3[value="80"] ~ p#blue {
-    opacity: 0.9;
-  }
-  input#slider3[value="100"] ~ p#blue {
-    opacity: 1;
-  }
