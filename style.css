@@ -62,7 +62,6 @@ body {
 /* mixing */
 
 .mixing p {
-  background-color: rgb(var(--r), var(--g), var(--b));
   position: absolute;
   width: 100%;
   box-sizing: border-box;
