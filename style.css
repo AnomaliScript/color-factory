@@ -1,3 +1,9 @@
+:root {
+  --r: 255;
+  --g: 0;
+  --b: 0;
+}
+
 * {
     font-family: helvetica;
 }
@@ -56,80 +62,12 @@ body {
 /* mixing */
 
 .mixing p {
+  background-color: rgb(var(--r), var(--g), var(--b));
   position: absolute;
   width: 100%;
   box-sizing: border-box;
   padding: 50%;
   margin: 0px;
-}
-
-/* Red */
-p#red {
-  color: red;
-}
-input#redIntensity[value="0"] ~ p#red {
-  opacity: 0.1;
-}
-input#redIntensity[value="20"] ~ p#red {
-  opacity: 0.3;
-}
-input#redIntensity[value="40"] ~ p#red {
-  opacity: 0.5;
-}
-input#redIntensity[value="60"] ~ p#red {
-  opacity: 0.7;
-}
-input#redIntensity[value="80"] ~ p#red {
-  opacity: 0.9;
-}
-input#redIntensity[value="100"] ~ p#red {
-  opacity: 1;
-}
-
-/* Green */
-p#green {
-  color: lime;
-}
-input#greenIntensity[value="0"] ~ p#green {
-  opacity: 0.1;
-}
-input#greenIntensity[value="20"] ~ p#green {
-  opacity: 0.3;
-}
-input#greenIntensity[value="40"] ~ p#green {
-  opacity: 0.5;
-}
-input#greenIntensity[value="60"] ~ p#green {
-  opacity: 0.7;
-}
-input#greenIntensity[value="80"] ~ p#green {
-  opacity: 0.9;
-}
-input#greenIntensity[value="100"] ~ p#green {
-  opacity: 1;
-}
-
-/* Blue */
-p#blue {
-  color: blue;
-}
-input#blueIntensity[value="0"] ~ p#blue {
-  opacity: 0.1;
-}
-input#blueIntensity[value="20"] ~ p#blue {
-  opacity: 0.3;
-}
-input#blueIntensity[value="40"] ~ p#blue {
-  opacity: 0.5;
-}
-input#blueIntensity[value="60"] ~ p#blue {
-  opacity: 0.7;
-}
-input#blueIntensity[value="80"] ~ p#blue {
-  opacity: 0.9;
-}
-input#blueIntensity[value="100"] ~ p#blue {
-  opacity: 1;
 }
 
 .sliders {
