@@ -8,11 +8,6 @@ function updateColor() {
     const g = greenSlider.value;
     const b = blueSlider.value;
 
-    // Update CSS variables
-    document.documentElement.style.setProperty('--r', r);
-    document.documentElement.style.setProperty('--g', g);
-    document.documentElement.style.setProperty('--b', b);
-
     // Update the background color directly
     colorBox.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 }
