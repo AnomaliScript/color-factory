@@ -14,7 +14,7 @@ function updateColor() {
     document.documentElement.style.setProperty('--b', b);
 
     // Update the background color directly
-    colorBox.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    // colorBox.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 }
 
 redSlider.addEventListener('input', updateColor);
