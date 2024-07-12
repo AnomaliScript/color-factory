@@ -1,5 +1,5 @@
 * {
-    font-family: helvetica;
+    font-family: system-ui;
 }
 
 body {
@@ -51,18 +51,10 @@ body {
   margin: 10px;
   padding: 0px;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 /* JS version: mixing */
-
-.mixing {
-  background-color: rgb(0, 255, 0);
-  position: absolute;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 50%;
-  margin: 0px;
-}
 
 .sliders {
   display: flex;
@@ -76,7 +68,19 @@ body {
 
 /* Non-JS version: media queries */
 
+ul {
+  padding-left: 30px;
+  box-sizing: border-box;
+  width: 50%;
+  margin: 10px;
+  display: flex;
+  background-color: lightgrey;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 li {
+  list-style-type: none;
   text-decoration: none;
 }
 
@@ -89,7 +93,7 @@ li {
     background-color: red;
   }
   span#red-text {
-    display: block;
+    display: inline;
   }
 }
 
@@ -98,7 +102,7 @@ li {
     background-color: orange;
   }
   span#orange-text {
-    display: block;
+    display: inline;
   }
 }
 
@@ -107,7 +111,7 @@ li {
     background-color: yellow;
   }
   span#yellow-text {
-    display: block;
+    display: inline;
   }
 }
 
@@ -116,7 +120,7 @@ li {
     background-color: green;
   }
   span#green-text {
-    display: block;
+    display: inline;
   }
 }
 
@@ -125,7 +129,7 @@ li {
     background-color: cyan;
   }
   span#blue-text {
-    display: block;
+    display: inline;
   }
 }
 
@@ -134,7 +138,7 @@ li {
     background-color: purple;
   }
   span#purple-text {
-    display: block;
+    display: inline;
   }
 }
 
@@ -143,6 +147,6 @@ li {
     background-color: pink;
   }
   span#pink-text {
-    display: block;
+    display: inline;
   }
 }
