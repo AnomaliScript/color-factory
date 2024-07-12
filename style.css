@@ -53,9 +53,9 @@ body {
   overflow: hidden;
 }
 
-/* mixing */
+/* JS version: mixing */
 
-.mixing p {
+.mixing {
   background-color: rgb(0, 255, 0);
   position: absolute;
   width: 100%;
@@ -72,4 +72,77 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: center;
+}
+
+/* Non-JS version: media queries */
+
+li {
+  text-decoration: none;
+}
+
+#red-text, #orange-text, #yellow-text, #green-text, #blue-text, #purple-text, #pink-text {
+  display: none;
+}
+
+@media (max-width: 100px) {
+  .mixing {
+    background-color: red;
+  }
+  span#red-text {
+    display: block;
+  }
+}
+
+@media (min-width: 101px) and (max-width: 200px) {
+  .mixing {
+    background-color: orange;
+  }
+  span#orange-text {
+    display: block;
+  }
+}
+
+@media (min-width: 201px) and (max-width: 300px) {
+  .mixing {
+    background-color: yellow;
+  }
+  span#yellow-text {
+    display: block;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 400px) {
+  .mixing {
+    background-color: green;
+  }
+  span#green-text {
+    display: block;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+  .mixing {
+    background-color: cyan;
+  }
+  span#blue-text {
+    display: block;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+  .mixing {
+    background-color: purple;
+  }
+  span#purple-text {
+    display: block;
+  }
+}
+
+@media (min-width: 601px) {
+  .mixing {
+    background-color: pink;
+  }
+  span#pink-text {
+    display: block;
+  }
 }
