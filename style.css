@@ -19,7 +19,7 @@ body {
     padding: 5px;
 }
 
-#aboutMe {
+#link {
     box-sizing: border-box;
     padding: 7px;
     border-radius: 5px;
@@ -29,7 +29,7 @@ body {
     cursor: pointer;
     transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
 }
-#aboutMe:hover {
+#link:hover {
   transform: scale(1.2) rotate(7deg);
   background-color: aqua;
   color: white;
@@ -152,6 +152,10 @@ li {
 }
 
 /* About me page */
+
+.content {
+  display: flex;
+}
 
 #hidden {
   display: none;
