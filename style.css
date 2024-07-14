@@ -156,10 +156,18 @@ li {
 .content {
   display: flex;
   padding: 30px;
+  height: 300px;
 }
 
 #aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 50%;
+  margin: 0px;
+}
+
+#aboutMe * {
   margin: 0px;
 }
 
@@ -171,6 +179,8 @@ li {
   display: inline;
 }
 
-img {
-  float: right;
+#image {
+  display: flex;
+  justify-content: center;
+  width: 50%;
 }
