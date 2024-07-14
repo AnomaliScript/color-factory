@@ -172,11 +172,11 @@ li {
 }
 
 #hidden {
-  display: none;
+  opacity: 0.1;
 }
 
 #hidden:hover {
-  display: inline;
+  opacity: 1;
 }
 
 #image {
