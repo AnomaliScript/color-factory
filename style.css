@@ -108,7 +108,7 @@ li {
 
 @media (min-width: 601px) and (max-width: 700px) {
   .mixing {
-    background-color: yellow;
+    background-color: rgb(139, 139, 0);
   }
   span#yellow-text {
     display: inline;
@@ -117,7 +117,7 @@ li {
 
 @media (min-width: 701px) and (max-width: 800px) {
   .mixing {
-    background-color: green;
+    background-color: lime;
   }
   span#green-text {
     display: inline;
