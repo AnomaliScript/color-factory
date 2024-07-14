@@ -150,3 +150,17 @@ li {
     display: inline;
   }
 }
+
+/* About me page */
+
+#hidden {
+  display: none;
+}
+
+#hidden:hover {
+  display: inline;
+}
+
+img {
+  float: right;
+}
