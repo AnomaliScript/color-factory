@@ -155,6 +155,12 @@ li {
 
 .content {
   display: flex;
+  padding: 30px;
+}
+
+#aboutMe {
+  width: 50%;
+  margin: 0px;
 }
 
 #hidden {
